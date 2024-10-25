@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div id="home">
+  <!-- <h1>Pragya Choudhary</h1> -->
+  <p>
+    I'm a programmer and travel blogger with over 6 years of experience spanning various engineering roles, from
+    hands-on contributor to leadership.
+    I love building products in fintech space.
+
+  </p>
+  <p>
+    I believe in the following principles:
+  <ul>
+    <li>Life is a binary gamble; go all-in, win or learn.</li>
+    <li>You only have to succeed the last time ~ Phil Knight</li>
+    <li>What lasts is legacy, not the individual</li>  
+  </ul>
+  </p>
+
+  <p> You can DM me on <a
+      href="https://x.com/Cpragy759">X (twitter)</a></p>
+  </br>
+  <!-- <ul class="posts"> -->
+  <!-- {% for post in site.posts %} -->
+  <!-- <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li> -->
+  <!-- <li><a href="{{ post.url }}">{{ post.title }}</a></li> -->
+  <!-- {% endfor %} -->
+  <!-- </ul> -->
+
+  <div style="margin-top: 45px;">
+    <h3>Currently reading: <a target="_blank" href="https://www.goodreads.com/review/list/56549726-pragya-choudhary?ref=nav_mybooks&shelf=currently-reading">Shogun by James Clavell</a> </h3>
+    {% for post in site.posts %}
+    {% if post.is_recommended_books %}
+    <a href="{{ post.url }}">{{ post.title }}</a></br>
+    {%- endif %}
+    {% endfor %}
+  </div>
+
+</div>
